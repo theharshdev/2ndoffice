@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en" class="antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — 2ndoffice</title>
+    <meta
+      name="description"
+      content="Long-form insights on eCommerce operations, customer experience, and outsourcing strategy."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Play:wght@400;700&family=Montserrat:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body data-page="blog" class="font-sans bg-slate-50 text-slate-900 dark:bg-ink-950 dark:text-slate-50">
+    <div class="bg-noise min-h-screen">
+      <div id="site-navbar"></div>
+
+      <main class="pt-20">
+        <!-- HERO -->
+        <section class="relative overflow-hidden">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-10 py-14 lg:grid-cols-12 lg:items-center lg:py-20">
+              <div class="lg:col-span-7">
+                <div
+                  data-intro-badge
+                  class="inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white/60 px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-700 dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-200"
+                >
+                  <span class="h-2 w-2 rounded-full bg-fuchsia-400"></span>
+                  Insights
+                </div>
+                <h1 data-intro-headline class="mt-5 text-4xl font-black tracking-tight sm:text-7xl">
+                  Playbooks, frameworks, and
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-emerald-400"
+                  >
+                    operator-level
+                  </span>
+                  tactics.
+                </h1>
+
+                <div data-intro-cta class="mt-7 grid gap-3 sm:grid-cols-2">
+                  <a
+                    href="./blog-detail.html"
+                    class="magnet inline-flex items-center justify-center rounded-2xl bg-slate-900 px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-slate-900/20 hover:opacity-95 dark:bg-white dark:text-slate-950 dark:shadow-white/10"
+                  >
+                    Read featured article
+                  </a>
+                  <a
+                    href="#latest"
+                    class="magnet inline-flex items-center justify-center rounded-2xl border border-slate-200/70 bg-white/60 px-6 py-4 text-sm font-extrabold text-slate-800 hover:bg-white dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-100 dark:hover:bg-slate-950/50"
+                  >
+                    Browse latest
+                  </a>
+                </div>
+              </div>
+
+              <div class="lg:col-span-5">
+                <div
+                  class="will-clip rounded-[30px] border border-slate-200/70 bg-white/60 p-5 dark:border-slate-800/70 dark:bg-slate-950/30"
+                  data-pulse
+                >
+                  <div class="relative overflow-hidden rounded-[22px]">
+                    <img
+                      data-zoom-on-scroll
+                      class="h-72 w-full object-cover"
+                      alt="Writing and strategy"
+                      src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1600&q=85"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-tr from-slate-950/55 via-slate-950/10 to-transparent"
+                    ></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                      <div class="text-lg font-black">Clarity is a competitive advantage.</div>
+                      <div class="mt-1 text-sm text-white/80">
+                        Process clarity → better customer experience → higher LTV.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-5 grid gap-3 sm:grid-cols-2">
+                    <div
+                      class="will-reveal rounded-2xl border border-slate-200/70 bg-white/70 p-4 dark:border-slate-800/70 dark:bg-slate-950/30"
+                    >
+                      <div class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                        Topics
+                      </div>
+                      <div class="mt-2 text-sm font-extrabold">CX, Ops, QA</div>
+                      <div class="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                        Real workflows and measurable outcomes.
+                      </div>
+                    </div>
+                    <div
+                      class="will-reveal rounded-2xl border border-slate-200/70 bg-white/70 p-4 dark:border-slate-800/70 dark:bg-slate-950/30"
+                    >
+                      <div class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                        Style
+                      </div>
+                      <div class="mt-2 text-sm font-extrabold">Tactical</div>
+                      <div class="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                        Checklists, templates, and playbooks.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FILTERS -->
+        <section class="py-10">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div
+              class="will-reveal flex flex-col gap-4 rounded-[28px] border border-slate-200/70 bg-white/60 p-6 dark:border-slate-800/70 dark:bg-slate-950/30 lg:flex-row lg:items-center lg:justify-between"
+            >
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-slate-900 px-3 py-1 text-xs font-bold text-white dark:bg-white dark:text-slate-950"
+                >
+                  All
+                </span>
+                <span
+                  class="rounded-full border border-slate-200/70 bg-white/60 px-3 py-1 text-xs font-bold text-slate-700 dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-200"
+                >
+                  Customer Experience
+                </span>
+                <span
+                  class="rounded-full border border-slate-200/70 bg-white/60 px-3 py-1 text-xs font-bold text-slate-700 dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-200"
+                >
+                  Store Ops
+                </span>
+                <span
+                  class="rounded-full border border-slate-200/70 bg-white/60 px-3 py-1 text-xs font-bold text-slate-700 dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-200"
+                >
+                  Back Office
+                </span>
+                <span
+                  class="rounded-full border border-slate-200/70 bg-white/60 px-3 py-1 text-xs font-bold text-slate-700 dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-200"
+                >
+                  QA & Analytics
+                </span>
+              </div>
+              <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
+                <input
+                  class="w-full rounded-2xl border border-slate-200/70 bg-white/60 px-4 py-3 text-sm font-semibold text-slate-800 placeholder:text-slate-500 dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-100 dark:placeholder:text-slate-400"
+                  placeholder="Search articles…"
+                />
+                <a
+                  href="./contact.html"
+                  class="magnet inline-flex items-center justify-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-extrabold text-white shadow-lg shadow-slate-900/20 hover:opacity-95 dark:bg-white dark:text-slate-950 dark:shadow-white/10"
+                >
+                  Request help
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURED GRID (Different layout: magazine split + tall card) -->
+        <section class="section-alt py-16">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="will-reveal flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <div class="kicker text-[11px] font-black uppercase text-slate-500 dark:text-slate-400">Featured</div>
+                <h2 class="mt-2 text-2xl sm:text-4xl font-bold">Editor’s picks</h2>
+              </div>
+              <a
+                class="text-sm font-extrabold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+                href="#latest"
+              >
+                Jump to latest →
+              </a>
+            </div>
+
+            <div class="mt-10 grid gap-5 lg:grid-cols-12 items-start">
+              <a
+                href="./blog-detail.html"
+                class="lg:col-span-7 will-clip group overflow-hidden rounded-[34px] border border-slate-200/70 bg-white/60 dark:border-slate-800/70 dark:bg-slate-950/30"
+                data-hover-card
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    data-zoom-on-scroll
+                    class="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    alt="Featured article"
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=85"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-tr from-slate-950/60 via-slate-950/10 to-transparent"
+                  ></div>
+                  <div
+                    class="absolute left-6 top-6 rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-bold text-white backdrop-blur"
+                  >
+                    Customer Experience
+                  </div>
+                  <div class="absolute bottom-6 left-6 right-6 text-white">
+                    <div class="text-2xl font-black">Premium CX systems that scale</div>
+                    <p class="mt-2 text-white/80">Macros, QA rubrics, and escalation design for consistent tone.</p>
+                    <div class="mt-4 text-xs font-bold uppercase tracking-wider text-white/70">8 min read</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="lg:col-span-5 grid gap-5">
+                <a
+                  href="./blog-detail.html"
+                  class="will-reveal rounded-[30px] border border-slate-200/70 bg-white/60 p-6 dark:border-slate-800/70 dark:bg-slate-950/30"
+                  data-hover-card
+                >
+                  <div class="kicker text-[11px] font-black uppercase text-slate-500 dark:text-slate-400">
+                    Store Ops
+                  </div>
+                  <h3 class="mt-3">Catalog hygiene cadence</h3>
+                  <p class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                    Prevent drift with weekly checks and rollback-ready workflows.
+                  </p>
+                </a>
+                <a
+                  href="./blog-detail.html"
+                  class="will-reveal rounded-[30px] border border-slate-200/70 bg-white/60 p-6 dark:border-slate-800/70 dark:bg-slate-950/30"
+                  data-hover-card
+                >
+                  <div class="kicker text-[11px] font-black uppercase text-slate-500 dark:text-slate-400">
+                    Back Office
+                  </div>
+                  <h3 class="mt-3">Refund evidence trails</h3>
+                  <p class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                    Structure notes and proof so decisions stay consistent.
+                  </p>
+                </a>
+                <a
+                  href="./blog-detail.html"
+                  class="will-reveal rounded-[30px] border border-slate-200/70 bg-white/60 p-6 dark:border-slate-800/70 dark:bg-slate-950/30"
+                  data-hover-card
+                >
+                  <div class="kicker text-[11px] font-black uppercase text-slate-500 dark:text-slate-400">
+                    QA &amp; Analytics
+                  </div>
+                  <h3 class="mt-3">Scorecards that don’t get ignored</h3>
+                  <p class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                    Build a weekly rhythm that turns QA into decisions—not spreadsheets.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- LATEST -->
+        <section id="latest" class="py-16">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="will-reveal flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Latest</div>
+                <h2 class="mt-1 text-3xl font-black tracking-tight sm:text-4xl">New from the operations desk.</h2>
+              </div>
+              <a
+                class="text-sm font-extrabold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+                href="./services.html"
+              >
+                Services →
+              </a>
+            </div>
+
+            <div class="mt-10 grid gap-5 lg:grid-cols-12 items-start">
+              <div class="lg:col-span-8 grid gap-5 sm:grid-cols-2" data-stagger>
+                <a
+                  data-stagger-item
+                  href="./blog-detail.html"
+                  class="will-reveal group overflow-hidden rounded-[26px] border border-slate-200/70 bg-white/60 dark:border-slate-800/70 dark:bg-slate-950/30"
+                  data-hover-card
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      data-zoom-on-scroll
+                      class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      alt="CX playbook"
+                      src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=85"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-tr from-slate-950/55 via-slate-950/10 to-transparent"
+                    ></div>
+                    <div
+                      class="absolute left-4 top-4 rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-bold text-white backdrop-blur"
+                    >
+                      Customer Experience
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <div class="text-sm font-black">The premium CX playbook: macros, QA, and escalation design</div>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                      A practical framework for consistent tone and fast resolution—even at peak volume.
+                    </p>
+                    <div
+                      class="mt-4 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+                    >
+                      <span>8 min read</span>
+                      <span>→</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  data-stagger-item
+                  href="./blog-detail.html"
+                  class="will-reveal group overflow-hidden rounded-[26px] border border-slate-200/70 bg-white/60 dark:border-slate-800/70 dark:bg-slate-950/30"
+                  data-hover-card
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      data-zoom-on-scroll
+                      class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      alt="Catalog hygiene"
+                      src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=85"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-tr from-slate-950/55 via-slate-950/10 to-transparent"
+                    ></div>
+                    <div
+                      class="absolute left-4 top-4 rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-bold text-white backdrop-blur"
+                    >
+                      Store Ops
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <div class="text-sm font-black">Catalog hygiene as revenue protection: a weekly cadence</div>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                      Stop attribute drift and promo errors before they break conversion rates.
+                    </p>
+                    <div
+                      class="mt-4 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+                    >
+                      <span>6 min read</span>
+                      <span>→</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  data-stagger-item
+                  href="./blog-detail.html"
+                  class="will-reveal group overflow-hidden rounded-[26px] border border-slate-200/70 bg-white/60 dark:border-slate-800/70 dark:bg-slate-950/30"
+                  data-hover-card
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      data-zoom-on-scroll
+                      class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      alt="Refund workflows"
+                      src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=85"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-tr from-slate-950/55 via-slate-950/10 to-transparent"
+                    ></div>
+                    <div
+                      class="absolute left-4 top-4 rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-bold text-white backdrop-blur"
+                    >
+                      Back Office
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <div class="text-sm font-black">Refund workflows that reduce disputes</div>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                      A step-by-step evidence checklist your agents can follow without guesswork.
+                    </p>
+                    <div
+                      class="mt-4 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+                    >
+                      <span>7 min read</span>
+                      <span>→</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  data-stagger-item
+                  href="./blog-detail.html"
+                  class="will-reveal group overflow-hidden rounded-[26px] border border-slate-200/70 bg-white/60 dark:border-slate-800/70 dark:bg-slate-950/30"
+                  data-hover-card
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      data-zoom-on-scroll
+                      class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      alt="QA scorecard"
+                      src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1400&q=85"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-tr from-slate-950/55 via-slate-950/10 to-transparent"
+                    ></div>
+                    <div
+                      class="absolute left-4 top-4 rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-bold text-white backdrop-blur"
+                    >
+                      QA &amp; Analytics
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <div class="text-sm font-black">QA scoring that improves agents (not morale)</div>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                      Calibrations, coaching loops, and thresholds that make feedback feel fair.
+                    </p>
+                    <div
+                      class="mt-4 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+                    >
+                      <span>9 min read</span>
+                      <span>→</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <aside
+                class="lg:col-span-4 will-clip rounded-[30px] border border-slate-200/70 bg-white/60 p-6 dark:border-slate-800/70 dark:bg-slate-950/30"
+              >
+                <div class="kicker text-[11px] font-black uppercase text-slate-500 dark:text-slate-400">Popular</div>
+                <div class="mt-4 grid gap-4">
+                  <a
+                    href="./blog-detail.html"
+                    class="rounded-2xl border border-slate-200/70 bg-white/70 p-4 text-slate-800 hover:bg-white dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-100 dark:hover:bg-slate-950/50"
+                  >
+                    <div class="text-sm font-black">WBR scorecards that drive decisions</div>
+                    <div class="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                      5 min read
+                    </div>
+                  </a>
+                  <a
+                    href="./blog-detail.html"
+                    class="rounded-2xl border border-slate-200/70 bg-white/70 p-4 text-slate-800 hover:bg-white dark:border-slate-800/70 dark:bg-slate-950/30 dark:text-slate-100 dark:hover:bg-slate-950/50"
+                  >
+                    <div class="text-sm font-black">Marketplace ops: cases + compliance</div>
+                    <div class="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                      6 min read
+                    </div>
+                  </a>
+                  <a
+                    href="./contact.html#contact-form"
+                    class="magnet inline-flex items-center justify-center rounded-2xl bg-slate-900 px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-slate-900/20 hover:opacity-95 dark:bg-white dark:text-slate-950 dark:shadow-white/10"
+                  >
+                    Request proposal
+                  </a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="site-footer"></div>
+    </div>
+
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
